@@ -1,0 +1,24 @@
+{
+  "name": "glaadoo-project",
+  "version": "1.0.0",
+  "description": "GLAADOO website for peer-to peer support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaadoo/Glaadoo-website.git"
+  },
+  "author": "Glaadoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glaadoo/Glaadoo-website/issues"
+  },
+  "homepage": "https://github.com/glaadoo/Glaadoo-website#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
