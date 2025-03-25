@@ -1,0 +1,79 @@
+/* Container spacing is handled by Bootstrap's .py-5, but you can adjust as needed. */
+
+/* Page Title */
+.reflection-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #17252A;
+}
+
+.reflection-subtitle {
+    font-size: 16px;
+    color: #17252A;
+}
+
+/* Reflection Item */
+.reflection-item {
+    background-color: #2B7A78;
+    /* Teal background */
+    border-radius: 8px;
+    padding: 20px;
+    align-items: center;
+    /* Vertical alignment for the row */
+}
+
+/* Large Letter Column */
+.letter-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reflection-letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* White text for the letter */
+}
+
+/* Text Column */
+.text-col .reflection-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    /* White heading text */
+    margin-bottom: 5px;
+}
+
+.text-col .reflection-desc {
+    font-size: 16px;
+    color: #FFFFFF;
+    /* White subtext */
+    margin-bottom: 10px;
+}
+
+/* Textarea */
+.reflection-textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 80px;
+    padding: 10px;
+}
+
+/* Connect Button */
+.connect-btn {
+    background-color: #2B7A78;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+    background-color: #3AAFA9;
+    color: #FFFFFF;
+}
