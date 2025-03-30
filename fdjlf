@@ -1,5 +1,0 @@
-[33m7934ef0[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/landing-page[m[33m, [m[1;31morigin/feature/landing-page[m[33m)[m HEAD@{0}: checkout: moving from feature/glaado-form to feature/landing-page
-[33m64eed66[m[33m ([m[1;32mfeature/glaado-form[m[33m)[m HEAD@{1}: commit: changes in the faq section in the landing page
-[33m7acb362[m[33m ([m[1;31morigin/feature/glaado-form[m[33m)[m HEAD@{2}: commit: Glaadoo form and sign in page
-[33medeaae3[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from main to feature/glaado-form
-[33medeaae3[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{4}: clone: from https://github.com/glaadoo/Glaadoo-website.git
