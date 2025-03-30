@@ -2,61 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>GLAADOO Video Call</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Conference</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="video-conference.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: #000;
+      }
+      #jitsi-container {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-fluid p-0 vh-100 d-flex flex-column">
-      <div class="row participants-row flex-grow-1 mx-5 my-2 d-flex flex-wrap">
-        <div class="col-12 col-md-6 participant">
-          <div class="name-tag">You</div>
-          <div class="avatar-circle"></div>
-          <div id="jitsi-container"></div>
-        </div>
-        <div class="col-12 col-md-6 participant">
-          <div class="name-tag">Sophia <span class="mute-icon">🔇</span></div>
-          <div class="avatar-circle"></div>
-        </div>
-        <div class="col-12 col-md-6 participant">
-          <div class="name-tag">James</div>
-          <div class="avatar-circle"></div>
-        </div>
-        <div class="col-12 col-md-6 participant">
-          <div class="name-tag">Emma</div>
-          <div class="avatar-circle"></div>
-        </div>
-      </div>
+    <div id="jitsi-container"></div>
 
-      <div class="controls py-3">
-        <button class="control-btn mx-2" id="mute-btn">
-          <i class="bi bi-mic-fill"></i>
-        </button>
-        <button class="control-btn mx-2" id="video-btn">
-          <i class="bi bi-camera-video-fill"></i>
-        </button>
-        <button class="control-btn end-call mx-2" id="end-call-btn">
-          <i class="bi bi-telephone-fill"></i>
-        </button>
-        <button class="control-btn mx-2" id="participants-btn">
-          <i class="bi bi-people-fill"></i>
-        </button>
-        <button class="control-btn mx-2" id="chat-btn">
-          <i class="bi bi-chat-left-text-fill"></i>
-        </button>
-      </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://meet.jit.si/external_api.js"></script>
-    <script src="script.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const roomName = urlParams.get("room");
+
+      // Fallback if room is missing (should not happen if script.js is working)
+      if (!roomName) {
+        alert("No room name found. Redirecting to form.");
+        window.location.href = "form.html";
+      } else {
+        const domain = "meet.jit.si";
+        const options = {
+          roomName: roomName,
+          parentNode: document.getElementById("jitsi-container"),
+          width: "100%",
+          height: "100%",
+          configOverwrite: {
+            startWithAudioMuted: false,
+            startWithVideoMuted: false,
+          },
+          interfaceConfigOverwrite: {
+            SHOW_JITSI_WATERMARK: false,
+          },
+        };
+        const api = new JitsiMeetExternalAPI(domain, options);
+      }
+    </script>
   </body>
 </html>

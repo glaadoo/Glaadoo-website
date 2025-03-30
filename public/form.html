@@ -4,19 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GLAADOO Reflection</title>
-    <!-- Bootstrap CSS (Optional, for layout utilities) -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="form.css" />
   </head>
   <body>
     <div class="container py-5">
-      <!-- Page Heading -->
       <div class="text-center mb-4">
         <h1 class="reflection-title">GLAADOO Reflection</h1>
         <p class="reflection-subtitle">
@@ -24,7 +21,7 @@
         </p>
       </div>
 
-      <!-- Gratitude (G) -->
+      <!-- Gratitude -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">G</div>
@@ -33,13 +30,14 @@
           <h2 class="reflection-heading">Gratitude</h2>
           <p class="reflection-desc">Today I'm grateful for...</p>
           <textarea
+            id="gratitude"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
         </div>
       </div>
 
-      <!-- Lesson Learned (L) -->
+      <!-- Lesson Learned -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">L</div>
@@ -50,13 +48,14 @@
             Advice I would give my younger self from today would be...
           </p>
           <textarea
+            id="lesson"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
         </div>
       </div>
 
-      <!-- Affirmation (A) -->
+      <!-- Affirmation -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">A</div>
@@ -67,13 +66,14 @@
             Today I affirm I am (e.g. "I'm Beautiful")
           </p>
           <textarea
+            id="affirmation"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
         </div>
       </div>
 
-      <!-- Achievement (A) -->
+      <!-- Achievement -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">A</div>
@@ -85,13 +85,14 @@
             up)
           </p>
           <textarea
+            id="achievement"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
         </div>
       </div>
 
-      <!-- Delight (D) -->
+      <!-- Delight -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">D</div>
@@ -103,13 +104,14 @@
             in the last 24 hours)
           </p>
           <textarea
+            id="delight"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
         </div>
       </div>
 
-      <!-- Opportunity to Better (O) -->
+      <!-- Opportunity to Better -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">O</div>
@@ -120,13 +122,14 @@
             Something I would like to work out within myself would be...
           </p>
           <textarea
+            id="opportunity_better"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
         </div>
       </div>
 
-      <!-- Opportunity to Help Another (O) -->
+      <!-- Opportunity to Help Another -->
       <div class="row reflection-item mb-3 align-items-start">
         <div class="col-12 col-md-1 letter-col">
           <div class="reflection-letter">O</div>
@@ -134,9 +137,10 @@
         <div class="col-12 col-md-11 text-col">
           <h2 class="reflection-heading">Opportunity to Help Another</h2>
           <p class="reflection-desc">
-            Opportunity to make someones day a little better.
+            Opportunity to make someone's day a little better.
           </p>
           <textarea
+            id="opportunity_help"
             class="form-control reflection-textarea"
             placeholder="Type your response here..."
           ></textarea>
@@ -145,15 +149,18 @@
 
       <!-- Connect Button -->
       <div class="text-center mt-4">
-        <button class="btn connect-btn">Connect</button>
+        <button id="connectBtn" class="btn connect-btn">Connect</button>
       </div>
     </div>
 
-    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Your JS -->
+    <script src="script.js"></script>
   </body>
 </html>
