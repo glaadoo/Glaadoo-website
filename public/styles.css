@@ -137,7 +137,41 @@ body {
 .acronym-item .content {
   font-size: 16px;
   line-height: 1.5;
+} 
+
+/* Footer Styling */
+.glaadoo-footer {
+  background-color: #17252A;
 }
+
+.glaadoo-footer .footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.glaadoo-footer .footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* Custom email button */
+.btn-email {
+  background-color: #3AAFA9; /* Accent color from Figma spec */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-email:hover {
+  background-color: #2B7A78;
+  transform: translateY(-2px);
+}
+
 
 
 

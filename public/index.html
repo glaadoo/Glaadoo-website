@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GLAADOO - Connect & Support</title>
 
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-
-    <title>GLAADOO - Connect & Support</title>
   </head>
+
   <body>
     <!-- Header -->
     <header class="navbar fixed-top shadow-sm py-3 glaadoo-header">
       <div class="container d-flex justify-content-between align-items-center">
-        <!-- Left: Logo -->
         <a href="#" class="navbar-brand glaadoo-logo">GLAADOO</a>
-
-        <!-- Right: Navigation -->
         <nav class="d-none d-md-flex gap-4">
           <a href="#about" class="nav-link">About</a>
           <a href="#faq" class="nav-link">FAQ</a>
           <a href="#stories" class="nav-link">Stories</a>
           <a href="#contact" class="nav-link">Contact</a>
         </nav>
-
-        <!-- Mobile toggle button -->
         <button
           class="navbar-toggler d-md-none"
           type="button"
@@ -46,15 +38,13 @@
 
     <!-- Hero Section -->
     <section class="hero-gradient text-center text-white py-5">
-      <div class="container">
+      <div class="container pt-5">
         <h1 class="display-4 fw-bold">Connect & Support</h1>
         <p class="lead">
           Join GLAADOO, your safe community for creating meaningful connections
           and building lasting relationships.
         </p>
-        <a href="signup.html" class="btn btn-primary btn-lg hover-lift" role="button">
-          Connect Now →
-        </a>
+        <a href="signup.html" class="btn btn-email mt-3">Connect Now →</a>
       </div>
     </section>
 
@@ -68,62 +58,25 @@
         </p>
         <div class="row mt-5 justify-content-center">
           <div class="col-md-8">
-            <!-- Vertical Acronym List -->
             <div class="acronym-list">
-              <div class="acronym-item">
-                <div class="letter">G</div>
-                <div class="content">
-                  <strong>Gratitude:</strong> Expressing appreciation.
-                </div>
-              </div>
-              <div class="acronym-item">
-                <div class="letter">L</div>
-                <div class="content">
-                  <strong>Lessons Learned:</strong> Growing from every experience.
-                </div>
-              </div>
-              <div class="acronym-item">
-                <div class="letter">A</div>
-                <div class="content">
-                  <strong>Affirmation:</strong> Uplifting others through encouragement.
-                </div>
-              </div>
-              <div class="acronym-item">
-                <div class="letter">A</div>
-                <div class="content">
-                  <strong>Achieved:</strong> Celebrating personal victories and growth.
-                </div>
-              </div>
-              <div class="acronym-item">
-                <div class="letter">D</div>
-                <div class="content">
-                  <strong>Delight:</strong> Finding joy in small wins and moments.
-                </div>
-              </div>
-              <div class="acronym-item">
-                <div class="letter">O</div>
-                <div class="content">
-                  <strong>Opportunity to Be Better:</strong> Striving for personal excellence.
-                </div>
-              </div>
-              <div class="acronym-item">
-                <div class="letter">O</div>
-                <div class="content">
-                  <strong>Opportunity to Help:</strong> Supporting others through action.
-                </div>
-              </div>
+              <div class="acronym-item"><div class="letter">G</div><div class="content"><strong>Gratitude:</strong> Expressing appreciation.</div></div>
+              <div class="acronym-item"><div class="letter">L</div><div class="content"><strong>Lessons Learned:</strong> Growing from every experience.</div></div>
+              <div class="acronym-item"><div class="letter">A</div><div class="content"><strong>Affirmation:</strong> Uplifting others through encouragement.</div></div>
+              <div class="acronym-item"><div class="letter">A</div><div class="content"><strong>Achieved:</strong> Celebrating personal victories and growth.</div></div>
+              <div class="acronym-item"><div class="letter">D</div><div class="content"><strong>Delight:</strong> Finding joy in small wins and moments.</div></div>
+              <div class="acronym-item"><div class="letter">O</div><div class="content"><strong>Opportunity to Be Better:</strong> Striving for personal excellence.</div></div>
+              <div class="acronym-item"><div class="letter">O</div><div class="content"><strong>Opportunity to Help:</strong> Supporting others through action.</div></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Better Body Breakthroughs Section -->
+    <!-- Stories -->
     <section id="stories" class="py-5 bg-light text-center">
       <div class="container">
         <h2>Better Body Breakthroughs</h2>
         <p>Real stories from our community members.</p>
-
         <div class="row mt-4">
           <div class="col-md-4 mb-3">
             <div class="card shadow-sm p-3 hover-lift">
@@ -141,28 +94,235 @@
     <section id="faq" class="py-5 bg-light">
       <div class="container">
         <h2>Frequently Asked Questions</h2>
+
+        <!-- Accordion Component -->
         <div class="accordion accordion-flush mt-4" id="faqAccordion">
-          <!-- FAQ 1–6 (Keep your existing FAQ code here unchanged) -->
-          <!-- For brevity, not repeated here but assume it's intact -->
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is GLAADOO and what does it stand for?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                GLAADOO is more than just a support network; it’s a framework
+                designed to foster personal growth and community connection
+                through a focus on gratitude and purpose. The name itself
+                represents our core values: Gratitude, Lessons Learned,
+                Affirmation, Achieved, Delight, Opportunity to Serve Others.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How does GLAADOO help me connect with others in a meaningful
+                way?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                GLAADOO encourages users to reflect on what they're grateful
+                for, share lessons they've learned, and affirm their personal
+                purpose. This framework helps guide interactions, ensuring they
+                are positive, supportive, and focused on personal growth and
+                shared values.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What kind of personal development support can I expect from
+                GLAADOO?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                GLAADOO supports your personal development by prompting you to
+                identify your aspirations, celebrate your achievements, and find
+                opportunities to create delight for yourself and others. Our
+                community emphasizes continuous improvement and service to
+                others, helping you grow in a positive and supportive
+                environment.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How can I use GLAADOO to enhance my interactions with others?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Use GLAADOO as a guide for your interactions. Share what you're
+                grateful for, offer affirmations, and look for opportunities to
+                serve others. This approach transforms interactions into
+                meaningful connections, fostering a community built on
+                positivity and shared purpose.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                What makes GLAADOO different from other support networks?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                GLAADOO distinguishes itself through its unique framework
+                centered on gratitude and purpose. Unlike other platforms, we
+                encourage users to focus on their blessings, learn from their
+                experiences, and strive to serve others. This approach leads to
+                more positive, meaningful interactions and a stronger sense of
+                community.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                What if I need help identifying my purpose or expressing
+                gratitude?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                GLAADOO provides resources and prompts to help you explore your
+                purpose and express gratitude. Our community is also here to
+                support you on your journey, offering encouragement and guidance
+                as you discover your unique strengths and passions.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="py-5 bg-light text-center">
       <div class="container">
         <h2>Get in Touch</h2>
-        <p>Have questions? Email us at:</p>
-        <a href="mailto:printwithpurposeteam@email.com" target="_blank">Email Us!</a>
+        <p>Have questions or want to learn more about GLAADOO? We’d love to hear from you.</p>
+        <a href="mailto:printwithpurposeteam@email.com" class="btn btn-email mt-3">Email Us</a>
       </div>
     </section>
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Footer -->
+    <footer class="glaadoo-footer mt-5 text-white">
+      <div class="container py-4">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">GLAADOO</h5>
+            <p class="small">creating connection before crisis.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#stories" class="footer-link">Stories</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 class="fw-bold">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="privacypolicy.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-light opacity-25" />
+        <p class="text-center small mb-0">© 2025 GLAADOO. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
 
